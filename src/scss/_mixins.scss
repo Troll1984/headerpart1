@@ -1,0 +1,9 @@
+@mixin container {
+   width: calc(75% - 40px); 
+   max-width: 1400px;   
+   margin: 0 auto;  
+   @media(max-width: 500px){
+     width: 100%;
+     
+   }   
+}

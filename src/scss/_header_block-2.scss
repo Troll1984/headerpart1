@@ -1,0 +1,13 @@
+img {
+    width: 500px;  
+    margin: 0 auto;       
+    border-radius: 50%;
+    z-index: 1;
+    @media(max-width: 800px) {
+        width: 300px;
+    }
+    @media(max-width: 450px) {
+        
+        width: 200px; 
+    }
+}
