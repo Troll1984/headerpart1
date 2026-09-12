@@ -1,0 +1,15 @@
+.block-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #141313;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 100px;
+    background: #fff;
+    >div:last-of-type {
+        display: flex;
+    }
+}
