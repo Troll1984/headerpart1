@@ -5,11 +5,24 @@
     gap: 50px;
     color: #141313;
     width: 100%;
+    height: auto;
     margin: 0 auto;
     border-radius: 10px;
-    height: 100px;
+    padding: 10px;
     background: #fff;
+    overflow-wrap: break-word;   
+    min-width: 0;
+    @media(max-width: 990px){
+        flex-direction: column;
+         gap: 10px;
+     }
+     
     >div:last-of-type {
         display: flex;
+        @media(max-width:550px) {
+            flex-direction: column;
+            gap: 5px;
+            
+        }        
     }
 }
