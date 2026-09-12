@@ -1,3 +1,5 @@
+/*Головна картинка*/
+@import 'mixins';
 img {
     width: 500px;  
     margin: 0 auto;       
@@ -11,3 +13,117 @@ img {
         width: 200px; 
     }
 }
+/*Продовжую блок*/
+
+.blocks {       
+    display: flex;    
+    gap: 10px;
+    color: #fff;
+    overflow-wrap: break-word;   
+    @media(max-width: 1850px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media(max-width: 1040px){
+        overflow: hidden;
+        width: 100%;
+    }
+    .block-grey {
+        
+        display: flex;
+        gap: 10px;        
+        font-size: 0.8rem;  
+        .group {            
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+            &:nth-child(2) {
+                display: none;
+                @media (max-width: 1040px) {
+                    display: flex;
+                }
+            }
+        }
+        @media (max-width: 1040px) {    
+        display: flex;
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: slideNext 15s linear infinite;        
+        }    
+    }
+}
+
+
+
+@keyframes slideNext {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50% );
+    }
+}
+.block-icons {
+    @include display; 
+    gap: 10px;   
+    >div:first-of-type {
+        @include display;
+        gap: 5px;
+        >span {          
+            padding: 15px 5px;
+            background: #fff;
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: #252424;
+            border-radius: 5px;
+            
+        }
+    }
+    >div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        font-weight: 600;        
+    }
+    >div:last-of-type {
+         @include display;
+         gap: 5px;
+         >i:first-of-type {
+             @include display;
+            padding: 10px 25px;
+            border-radius: 5px;
+            background: #fff;
+            color: #252424;
+            
+         }
+         .raiting {
+            display: flex;
+            flex-direction: column;  
+            i {
+                font-size: 0.5rem;
+                color: #f5f825
+            }          
+         }
+    }
+}
+.block-grey {  
+        span {
+            display: flex;
+            align-items: center;
+            gap: 15px;           
+            padding: 25px 10px;
+            border-radius: 10px;
+            background: linear-gradient(46deg,rgba(65, 87, 69, 1) 0%, rgba(9, 28, 4, 1) 84%);
+            font-size: 1rem;
+            @media(max-width: 1100px){
+                padding: 10px 5px;
+            }
+            i {
+                @include display;
+                padding: 10px 20px;
+                border: 1px dashed #fff;
+                border-radius: 10px;
+            }
+        }
+    }
+

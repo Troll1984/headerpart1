@@ -2,8 +2,18 @@
    width: calc(75% - 40px); 
    max-width: 1400px;   
    margin: 0 auto;  
-   @media(max-width: 500px){
-     width: 90%;
-     
+   @media(max-width: 1450px) {
+   width: calc(90% - 40px);
+   }
+   @media(max-width: 1250px){
+     width: calc(100% - 40px);    
    }   
 }
+@mixin display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

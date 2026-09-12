@@ -1,4 +1,6 @@
-.block-info {
+@import 'mixins';
+.block-info {   
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;

@@ -6,12 +6,18 @@ header {
     background: url(../img/holt.avif) no-repeat center / cover;    
     .header-wrapper {
         @include container;                     
-        nav {       
+        nav {            
         display: flex;
         justify-content: space-between;                
         position: fixed;          
         width: calc(75% - 40px); 
         z-index: 1000;
+        @media(max-width: 1450px) {
+            width: calc(90% - 40px);
+        }
+        @media(max-width: 1250px) {
+            width: calc(100% - 40px);
+        }
         @media (max-width: 500px) {
                width: auto;
                left: 10px;
