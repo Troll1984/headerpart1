@@ -10,18 +10,10 @@ header {
         nav {            
         display: flex;
         justify-content: space-between;                
-        position: fixed;          
-        width: calc(60% - 40px); 
-        z-index: 1000;
-        @media(max-width: 1650px) {
-            width: calc(75% - 40px);
-        }       
-       
-        @media (max-width: 990px) {
-               width: 95%;
-               left: 5px;
-               right: 5px;
-            }
+        position: fixed;     
+        z-index: 1000;   
+        width: inherit;
+        max-width: inherit;    
         }
     }
 }  

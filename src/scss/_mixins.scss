@@ -5,10 +5,9 @@
    @media(max-width: 1650px) {
    width: calc(75% - 40px);
    }
-   @media(max-width: 960px) {
-    width: calc(95% - 40px);
-   }
-  
+   @media(max-width: 990px) {
+      width: calc(100% - 40px);
+   }  
 }
 @mixin display {
   display: flex;
