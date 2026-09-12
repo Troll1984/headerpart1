@@ -25,30 +25,29 @@ img {
         align-items: center;
     }
     @media(max-width: 1040px){
+       
         overflow: hidden;
         width: 100%;
     }
-    .block-grey {
-        
-        display: flex;
-        gap: 10px;        
-        font-size: 0.8rem;  
+    .block-grey {        
+        display: flex;                
+        font-size: 0.8rem;          
         .group {            
             display: flex;
             gap: 10px;
-            flex-shrink: 0;
-            &:nth-child(2) {
-                display: none;
+            flex-shrink: 0;            
+            &:nth-child(2) {                
+                display: none;                
                 @media (max-width: 1040px) {
                     display: flex;
                 }
             }
         }
-        @media (max-width: 1040px) {    
-        display: flex;
+        @media (max-width: 1040px) {   
+                
         width: max-content;
         flex-wrap: nowrap;
-        animation: slideNext 15s linear infinite;        
+        animation: slideNext 10s linear infinite;        
         }    
     }
 }
@@ -57,10 +56,10 @@ img {
 
 @keyframes slideNext {
     from {
-        transform: translateX(0%);
+        transform: translateX(75%);
     }
     to {
-        transform: translateX(-50% );
+        transform: translateX(-70%);
     }
 }
 .block-icons {
