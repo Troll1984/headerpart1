@@ -17,6 +17,7 @@
     width: calc(60% - 40px); 
     margin-right: 20px ;  
     box-shadow: 3px 0px 6px 0px rgba(0,0,0,0.75);
+    
     @media(max-width: 1650px) {
     width: calc(75% - 40px);
     }
@@ -25,6 +26,7 @@
         width: calc(100% - 40px);
         gap: 10px;
         height: auto;
+        margin-left: 20px;
     }     
     >div:last-of-type {
         display: flex;

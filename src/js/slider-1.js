@@ -9,16 +9,16 @@ leftArrow.addEventListener('click', function() {
     if(move === 0){
         return;
     } else {
-         move += 365;
+         move += 330;
     sliderImage.style.transform = `translateX(${move}px)`;
     }
    
 })
 rightArrow.addEventListener('click', function() {
-    if(move === -1460){
+    if(move === -1320){
         return;
     } else {
-    move -= 365    ;
+    move -= 330    ;
     sliderImage.style.transform = `translateX(${move}px)`;
     }
 })
