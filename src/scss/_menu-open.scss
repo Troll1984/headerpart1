@@ -8,62 +8,53 @@
     background: linear-gradient(258deg,rgba(156, 117, 40, 30.100) 0%, rgba(230, 191, 138, 30.92) 100%);
     position: relative;
     top: 0;
-    right: 670px;  
+    left: -200px;  
     overflow-wrap: break-word;   
     min-width: 0;
-    z-index: 3000;
-    
+    z-index: 3000;  
     @media(max-width:1350px){
-        right:300px;
+        right:300px;        
     }
-    @media(max-width:600px){
-        right:0px;
-
+    @media(max-width:1350px) {
+        right: 100px;
     }
-    
+    @media(max-width:450px){
+        left: 0px;         
+      }    
      h1 {
-        text-align: center;
+      text-align: center;
         margin-top: 50px;
         color: #662609;
      }
      ul {
+        
         display: flex;
-        flex-direction: column;             
+        flex-direction: column; 
+        justify-content: center;            
         font-size: 1.5rem;       
         margin-top: 20px;
         list-style: none;
-        li {    
-            margin-left: 320px;        
+        li {                   
             cursor: pointer;
-            padding: 10px;
-            @media(max-width:600px){
-                margin-left: 0px;        
-            }
-            @media(max-width:450px) {
-                margin-right: 50px;
-            }
-            &:hover {
-                background: linear-gradient(258deg,rgba(156, 117, 40, 0.85) 0%, rgba(230, 191, 138, 0.82) 100%);
+            padding: 10px;            
+            @media(max-width:450px){
+                margin-right: 100px;      
             }
             
+            &:hover {
+                background: linear-gradient(258deg,rgba(156, 117, 40, 0.85) 0%, rgba(230, 191, 138, 0.82) 100%);
+           }            
         }
      }
 }
 .logos {    
     display: flex;
-    flex-direction: column;  
-    margin-left: 200px;          
+    flex-direction: column;               
     gap: 5px;    
     font-weight: 600;
     margin-top: 10px;  
     color:#75391e;
-    cursor: pointer;  
-    @media(max-width:600px) {
-        margin-left: 0px;
-    }      
-    @media(max-width:450px) {
-                margin-right: 100px;
-            }   
+    cursor: pointer;    
     >div:first-of-type {
         display: flex;
         flex-direction: column;
@@ -145,7 +136,7 @@
     li {
         i {
             font-size: 1.2rem;
-            margin-left: 10px;
+            
         }
     }
 }
