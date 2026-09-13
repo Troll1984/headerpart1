@@ -1,7 +1,7 @@
 @mixin container {
    width: calc(60% - 40px);  
    max-width: 1400px;   
-   margin: 0 auto;  
+   margin: 0 auto;   
    @media(max-width: 1650px) {
    width: calc(75% - 40px);
    }

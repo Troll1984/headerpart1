@@ -20,7 +20,8 @@ img {
     display: flex;    
     gap: 10px;
     color: #fff;
-    overflow-wrap: break-word;   
+    overflow-wrap: break-word;  
+    padding: 0 5px;  
     @media(max-width: 1850px) {
         flex-direction: column;
         align-items:flex-start;
