@@ -27,14 +27,3 @@ body {
 .wrapper {
     min-height: 100vh;
 }
-main {
-    height: 1400px;
-    @include container;
-    background: #fff;
-    @media(max-width: 1700px) {
-        margin: 20px 100px;
-    }
-     @media(max-width: 600px) {
-        margin: 20px 10px;
-     }    
-}
