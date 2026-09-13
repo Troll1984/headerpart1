@@ -47,14 +47,10 @@ img {
         @media (max-width: 990px) {                  
         width: max-content;
         flex-wrap: nowrap;
-        animation: slideNext 15s linear infinite;    
-           
+        animation: slideNext 15s linear infinite;         
         }    
     }
 }
-
-
-
 @keyframes slideNext {
     from {
         transform: translateX(75%);
@@ -75,8 +71,7 @@ img {
             font-size: 0.7rem;
             font-weight: 800;
             color: #252424;
-            border-radius: 5px;
-            
+            border-radius: 5px;            
         }
     }
     >div:nth-child(2) {
@@ -93,17 +88,16 @@ img {
             padding: 10px 25px;
             border-radius: 5px;
             background: #fff;
-            color: #252424;
-            
+            color: #252424;            
          }
          .raiting {
             display: flex;
             flex-direction: column;  
             i {
-                font-size: 0.5rem;
-                color: #f5f825
+               font-size: 0.5rem;
+               color: #f5f825
             }          
-         }
+        }
     }
 }
 .block-grey {  
