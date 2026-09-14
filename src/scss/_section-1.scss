@@ -12,17 +12,17 @@ main {
     background: #fff;
     height: auto;
 }
-.block-slider {      
+.block-slider {         
     display: flex;    
-    gap: 10px;
+    
     @media(max-width: 1700px) {
-        gap: 100px;
+        gap: 10px;
     }
     @media(max-width: 1250px) {
         flex-direction: column;
         gap: 10px;
     }
-    .text-info {       
+    .text-info {               
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -36,7 +36,10 @@ main {
          
         h1 {
             font-size: 5rem;
-            line-height: 0.8;              
+            line-height: 0.8;        
+             @media(max-width: 1300px){
+                font-size: 4rem;
+             }    
              @media(max-width: 500px) {
                 font-size: 3rem;
              } 
@@ -53,19 +56,7 @@ main {
         }
     }
 }
-.block-slider{
- span {
-        display: flex;
-        gap: 20px;   
-        @media(max-width: 770px) {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            top: 300px;
-            z-index: 1000;                    
-            }            
-        }
-    }
+
                
 #left-arrow {
         @include arows ;
@@ -75,7 +66,7 @@ main {
             background: hsl(0, 5%, 87%);
             }
         }  
-        #right-arrow {
+#right-arrow {
             @include arows ;
             background: #000;
             color: #fff;
@@ -159,9 +150,35 @@ main {
             
         }      
     
-    .wrap-slid {     
+    .wrap-slid {         
        overflow: hidden;
        flex: 1;
        
     }
+
+
+    .slide-arrows {
+        display: flex;
+        gap: 20px; 
+        position: relative;
+        top: 300px; 
+        right: 300px;
+         @media(max-width: 1250px){
+            position: relative;
+            top: 0px;
+            right: 0px;
+            z-index: 3000;
+            
+         }
+        
+        @media(max-width: 770px) {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 300px;
+            right: 0px;
+            z-index: 3000;                    
+            }            
+        }
+    
     

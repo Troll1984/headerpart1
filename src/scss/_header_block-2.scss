@@ -22,6 +22,9 @@
         z-index: 2000;      
         display: flex;                        
         font-size: 0.8rem;  
+        @media (max-width: 1850px){
+             margin-bottom: 10px;
+        }
          @media (max-width: 1040px) {
             margin-bottom: 10px;
          }                
@@ -82,23 +85,20 @@
         }
     }
 }
-.block-grey { 
-    
+.block-grey {     
         .wrapper-group {        
             display: flex;              
             width: max-content;
             @media(max-width: 790px){
                  animation: slider 8s linear infinite; 
-            }
-                            
+            }                            
             .group {            
                 display: flex;                       
                 flex-shrink: 0;
                 width: 760px;
                 gap: 10px;
                 }
-            }     
-               
+            }                   
             span {
             display: flex;
             align-items: center;            
