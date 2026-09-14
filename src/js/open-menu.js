@@ -11,19 +11,25 @@ btn.addEventListener('click', function() {
 
 
 /*Появленя блока контакт */
-let blockСontact = document.querySelector('.block-contact');
+let blockContact = document.querySelector('.block-contact');
 let btnClose = document.querySelector('#btnclose'); 
+
+
 document.addEventListener('click', function() {
-   
+   if(window.innerWidth > 600){
+    return;
+   }else {   
     setTimeout(() => {
-        blockСontact.style.display = 'flex';
+        blockContact.style.display = 'flex';
+        btnClose.style.display = 'block';
     }, 5000);
+}
    
 }, { once: true });
 btnClose.addEventListener('click', function() {
-     blockСontact.style.display = 'none';
+     blockContact.style.display = 'none';
      setTimeout(() => {
-        blockСontact.style.display = 'flex';
+        blockContact.style.display = 'flex';
      },60000)
 });
 
