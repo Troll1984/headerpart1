@@ -12,7 +12,11 @@ header {
         justify-content: space-between;                
         position: fixed;     
         z-index: 1000;   
-        width: inherit;           
+        width: inherit;   
+        @media(max-width: 450px){
+            padding: 0 10px; 
+        }
+               
         }
     }
 }  
