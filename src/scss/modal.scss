@@ -4,10 +4,9 @@
     height: 70%;    
     position: fixed;
     top: 25%;
-    left: 25%;
     border-radius: 10px;
     z-index: 5000;
-   background: red !important;
+    background: url('../img/present.avif') no-repeat center / cover;
     @media(max-width: 1300px){
        right: 25%;
        top: 28%; 
@@ -61,7 +60,7 @@
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(39, 34, 39, 0.5);
+    background: rgba(39, 34, 39, 0.8);
     z-index: 2000;
     opacity: 0;
     visibility: hidden;

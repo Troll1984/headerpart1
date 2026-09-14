@@ -8,9 +8,7 @@ btnNumber.addEventListener('click', function() {
     if(inp.value === '1' || inp.value === '1'){        
         overlay.classList.add('show');
          setTimeout(() => {
-             modalWindow.style.display = 'block';
-            modalWindow.style.backgroundColor = 'red';
-            modalWindow.style.opacity = '1';
+            modalWindow.style.display = 'block';           
         }, 3000)
         setTimeout(() => {            
             textPresent.style.display = 'block';
