@@ -146,17 +146,12 @@ main {
                         box-shadow: -10px 10px 0 10px #fff;
                     }
                 }
-            }
-            
-        }      
-    
+            }            
+        }          
     .wrap-slid {         
        overflow: hidden;
-       flex: 1;
-       
+       flex: 1;       
     }
-
-
     .slide-arrows {
         display: flex;
         gap: 20px; 
@@ -167,10 +162,8 @@ main {
             position: relative;
             top: 0px;
             right: 0px;
-            z-index: 3000;
-            
-         }
-        
+            z-index: 3000;            
+         }        
         @media(max-width: 770px) {
             display: flex;
             justify-content: space-between;
