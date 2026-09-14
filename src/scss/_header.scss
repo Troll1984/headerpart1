@@ -13,6 +13,9 @@ header {
         position: fixed;     
         z-index: 1000;   
         width: inherit;   
+        @media(max-width: 970px) {
+            padding: 0 10px;
+        }
         @media(max-width: 450px){
             padding: 0 10px; 
         }
