@@ -15,15 +15,13 @@ let blockContact = document.querySelector('.block-contact');
 let btnClose = document.querySelector('#btnclose'); 
 
 
-document.addEventListener('click', function() {
-   if(window.innerWidth > 600){
-    return;
-   }else {   
+document.addEventListener('click', function() {  
+     
     setTimeout(() => {
         blockContact.style.display = 'flex';
         btnClose.style.display = 'block';
     }, 5000);
-}
+
    
 }, { once: true });
 btnClose.addEventListener('click', function() {
