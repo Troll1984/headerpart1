@@ -4,9 +4,10 @@
     height: 70%;    
     position: fixed;
     top: 25%;
+    left: 25%;
     border-radius: 10px;
     z-index: 5000;
-    background: url('./img/present.avif') no-repeat center / cover;
+   background: red !important;
     @media(max-width: 1300px){
        right: 25%;
        top: 28%; 
