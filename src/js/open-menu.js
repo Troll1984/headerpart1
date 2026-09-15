@@ -9,21 +9,18 @@ btn.addEventListener('click', function() {
      openMenu.style.display = "none"
 })
 
-
 /*Появленя блока контакт */
+
 let blockContact = document.querySelector('.block-contact');
 let btnClose = document.querySelector('#btnclose'); 
 
-
-document.addEventListener('click', function() {  
-     
+document.addEventListener('click', function() {      
     setTimeout(() => {
         blockContact.style.display = 'flex';
         btnClose.style.display = 'block';
-    }, 5000);
-
-   
+    }, 5000);   
 }, { once: true });
+
 btnClose.addEventListener('click', function() {
      blockContact.style.display = 'none';
      setTimeout(() => {

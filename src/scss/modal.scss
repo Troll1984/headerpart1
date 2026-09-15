@@ -8,6 +8,7 @@
     z-index: 5000;
     background: url('../img/present.avif') no-repeat center / cover;
     box-shadow: 0px 0px 40px 29px rgba(76, 16, 104, 0.9);
+    animation: pulser 1s linear;    
     @media(max-width: 1300px){
        right: 25%;
        top: 32%; 
@@ -35,12 +36,13 @@
  display: none;
  align-items: center;
  position: fixed;
- top: 5%;
+ top: 2%;
  left: 22%;
  z-index: 5000;
  color: #ce8704;
  font-size: 2rem;
  text-align: center;  
+ animation: pulse 1s alternate infinite;
     @media(max-width: 1300px){
       font-size: 1.5rem;
       left: 25%;
@@ -53,11 +55,8 @@
         left: 15%;
         font-size: 1.0rem;
         top: 21%;
-    }
-     
-   
+    } 
 }
-
 .overlay {
     position: fixed;
     inset: 0;
@@ -66,18 +65,53 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 5s ease;
-    
+    transition: opacity 5s ease;    
 }
 .show {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
-
 .active {    
-    box-shadow: 0px 0px 40px 29px rgba(8, 114, 8, 0.9);
-   
+    box-shadow: 0px 0px 40px 29px rgba(8, 114, 8, 0.9);   
 }
+
+@keyframes pulser {
+    0% {
+        transform: scale(0);
+    }    
+    
+    100% {
+        transform: scale(1);
+    }
+}
+.animate {
+    animation: puls 1s alternate infinite;
+}
+.animates {
+    animation: pulse 1s alternate infinite;
+}
+@keyframes puls {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 40px 29px rgba(76, 16, 104, 0.9);
+    }    
+    
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 40px 29px rgba(8, 114, 8, 0.9); 
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+       
+    }    
+    
+    100% {
+        transform: scale(1.1);
+       
+    }
+}
+
 

@@ -24,8 +24,7 @@
         margin-top: 20px;
         color: #662609;
      }
-     ul {
-        
+     ul {        
         display: flex;
         flex-direction: column; 
         justify-content: center;            
@@ -41,8 +40,8 @@
             &:hover {
                 background: linear-gradient(258deg,rgba(156, 117, 40, 0.85) 0%, rgba(230, 191, 138, 0.82) 100%);
            }            
-        }
-     }
+       }
+    }
 }
 .logos {    
     display: flex;
@@ -106,8 +105,7 @@
             }
         }
     }     
-    .open-menu {
-        
+    .open-menu {        
         .btn {
             i {
             font-size: 2rem;
@@ -132,8 +130,7 @@
 .open-menu {
     li {
         i {
-            font-size: 1.2rem;
-            
+            font-size: 1.2rem;            
         }
     }
 }

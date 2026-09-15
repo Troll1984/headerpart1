@@ -6,16 +6,21 @@ let textPresent = document.querySelector('.text-present');
 let winSound = document.querySelector('#win-sound');
 let blockContact = document.querySelector('.block-contact');
 
-
 btnNumber.addEventListener('click', function() {
     if(inp.value === '1' || inp.value === '1'){        
         overlay.classList.add('show');
         winSound.play();
          setTimeout(() => {
-            modalWindow.style.display = 'block';                 
+            modalWindow.style.display = 'block';
+            textPresent.classList.add('animates');                  
         }, 3000)
+        setTimeout(() => {
+            modalWindow.classList.add('animate');  
+            textPresent.classList.add('animates');               
+        }, 4000)       
          setTimeout(() => {
-            modalWindow.classList.add('active');                
+            modalWindow.classList.add('active');  
+                          
         }, 7000)
         setTimeout(() => {
             modalWindow.classList.remove('active');                
@@ -36,4 +41,4 @@ modalWindow.addEventListener('click', function() {
     blockContact.style.display = 'none';
     winSound.pause();
     winSound.currentTime = 0;
-})
+});

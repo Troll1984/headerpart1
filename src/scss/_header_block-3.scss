@@ -15,7 +15,7 @@
     overflow-wrap: break-word;      
     position: fixed;     
     z-index: 1000;  
-    bottom: 50px; 
+    bottom: 500px; 
     width: calc(60% - 40px); 
     margin-right: 20px ;  
     box-shadow: 3px 0px 6px 0px rgba(0,0,0,0.75);   
@@ -70,8 +70,6 @@
     &:hover {
       box-shadow: 0px 0px 27px 5px rgba(0,0,0,0.79);
       cursor: pointer;
-
-
     }
     input,
     button {
@@ -85,8 +83,7 @@
         background: linear-gradient(178deg,rgba(240, 240, 233, 0.81) 0%, rgba(128, 128, 120, 0.82) 84%);
         color: #666262;
         font-size: 1rem;
-        &:focus {
-           
+        &:focus {           
             box-shadow: 0 0 10px #d3b508;
         }
     }

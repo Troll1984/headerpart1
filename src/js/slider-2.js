@@ -19,15 +19,11 @@ function checkArrows() {
     } else {
         iconRight.style.visibility = 'visible';
     }
-
 }
-
 if (slide.scrollWidth > wrap.clientWidth) {
     arrows.style.display = 'flex';
         checkArrows();
 }
-
-
 
 iconLeft.addEventListener('click', function() {
     if(moveArrow === 0){
@@ -36,16 +32,13 @@ iconLeft.addEventListener('click', function() {
          moveArrow += step;
     slide.style.transform = `translateX(${moveArrow}px)`;
     checkArrows();
-    }
-   
-})
+    }   
+});
 iconRight.addEventListener('click', function() {
      if (Math.abs(moveArrow) + wrap.clientWidth >= slide.scrollWidth) return;     
          moveArrow -= step;
-
     slide.style.transform = `translateX(${moveArrow}px)`;
     checkArrows();
-     
-   
 });
+
 window.addEventListener('resize', checkArrows);
