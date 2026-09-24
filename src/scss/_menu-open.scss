@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 .open-menu {
     display: none;
     flex-direction: column;
@@ -133,4 +134,22 @@
             font-size: 1.2rem;            
         }
     }
+}
+
+.list-open,
+.list-open-2  {
+    max-height: 0;
+    overflow: hidden;
+    width: auto;    
+    background: linear-gradient(258deg,rgba(156, 117, 40, 30.100) 0%, rgba(230, 191, 138, 30.92) 100%);
+    margin-right: 30px;
+    border-radius: 5px;
+    list-style: none;
+    transition: max-height 500ms ease;
+}
+.list-open.actives {
+    max-height: 200px;
+}
+.list-open-2.actives1 {
+    max-height: 200px;
 }

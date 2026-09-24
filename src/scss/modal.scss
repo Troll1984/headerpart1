@@ -32,7 +32,7 @@
     }       
 }
 .text-present {
-    width: 50%;
+ width: 50%;
  display: none;
  align-items: center;
  position: fixed;
@@ -57,6 +57,7 @@
         top: 21%;
     } 
 }
+/*Анимация модального окна*/
 .overlay {
     position: fixed;
     inset: 0;
@@ -75,12 +76,10 @@
 .active {    
     box-shadow: 0px 0px 40px 29px rgba(8, 114, 8, 0.9);   
 }
-
 @keyframes pulser {
     0% {
         transform: scale(0);
-    }    
-    
+    }        
     100% {
         transform: scale(1);
     }
@@ -95,8 +94,7 @@
     0% {
         transform: scale(1);
         box-shadow: 0px 0px 40px 29px rgba(76, 16, 104, 0.9);
-    }    
-    
+    }        
     100% {
         transform: scale(1.05);
         box-shadow: 0px 0px 40px 29px rgba(8, 114, 8, 0.9); 
@@ -105,13 +103,12 @@
 @keyframes pulse {
     0% {
         transform: scale(1);
-       
-    }    
-    
+           }        
     100% {
-        transform: scale(1.1);
-       
+        transform: scale(1.1);       
     }
 }
+
+
 
 

@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'section-2';
+@import 'section-3';
 main {
     height: 1700px;
     @include container;    
@@ -87,16 +88,16 @@ main {
                 border-radius: 15px;  
                 flex: 0 0 300px;                
                 &:nth-child(2) {
-                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slide-2.avif) no-repeat center / cover;
+                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-6.jpg) no-repeat center / cover;
                 }      
                 &:nth-child(3) {
-                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slide-3.jpg) no-repeat center / cover;
+                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-3.jpg) no-repeat center / cover;
                 }      
                 &:nth-child(4) {
-                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slide-4.jfif) no-repeat center / cover;
+                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-4.jpg) no-repeat center / cover;
                 }     
                 &:nth-child(5) {
-                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slide-5.jpg) no-repeat center / cover;
+                    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-5.jpg) no-repeat center / cover;
                 }     
                 h2 {
                     font-size: 2.5rem;

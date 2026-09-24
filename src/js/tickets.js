@@ -4,7 +4,17 @@ let modalWindow = document.querySelector('.modal-window');
 let overlay = document.querySelector('.overlay');
 let textPresent = document.querySelector('.text-present');
 let winSound = document.querySelector('#win-sound');
+let winSound1 = document.querySelector('#win-sound-1');
 let blockContact = document.querySelector('.block-contact');
+let music = document.querySelector('.music');
+
+music.addEventListener('click', function() {
+    if (winSound1.paused) {
+        winSound1.play();
+    } else {
+        winSound1.pause();
+    }
+});
 
 btnNumber.addEventListener('click', function() {
     if(inp.value === '1' || inp.value === '1'){        
