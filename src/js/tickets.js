@@ -17,7 +17,22 @@ music.addEventListener('click', function() {
 });
 
 btnNumber.addEventListener('click', function() {
-    if(inp.value === '1' || inp.value === '1'){        
+     if (
+        !/^\d+$/.test(inp.value) && 
+        !/^\+\d+$/.test(inp.value)
+    ) {
+        alert('Incorrect format, please enter a phone number');
+        return;
+    }
+
+    if (
+        inp.value.length !== 10 && 
+        inp.value.length !== 13
+    ) {
+        alert('Incorrect number length');
+        return;
+    }
+    if(inp.value === '0956479817' || inp.value === '+380956479817'){        
         overlay.classList.add('show');
         winSound.play();
          setTimeout(() => {
@@ -37,10 +52,10 @@ btnNumber.addEventListener('click', function() {
         }, 5000)
         setTimeout(() => {            
             textPresent.style.display = 'block';
-        }, 4000)
+        }, 4000)      
        
     }else {
-        alert('Ваш номер зарегестрирован');
+        alert('Your number is registerred now, good luck ');
     }
 });
         

@@ -52,7 +52,28 @@ video {
     flex-direction: column;
     gap: 10px;
 }
+.panel-comments {
+    input {
+    width: auto;
+    max-width: 30%;
+    height: auto;
+    min-height: 50px;
+    border-radius: 7px;
+    padding: 10px;
+}
+textarea {   
+    max-width: 100%;
+    height: auto;
+    min-height: 100px;
+    border-radius: 7px;
+    padding: 10px;
+}
 
+}
+
+.panel-comments p {
+    font-size: 200x;
+}
 
 .panel-comments {
      word-break: break-word;
@@ -102,18 +123,32 @@ video {
     box-sizing: border-box;
     font-size: 18px;
 }
-.comments-save > div {
-    display: flex;
-    justify-content: space-between;
+.comments-save > div {   
     width: auto;
-    height: auto;   
-    padding: 10px;
+    height: auto;  
+    min-height: 140px; 
+    padding: 15px;
     border-radius: 5px;
     background: #fff;
     margin-top: 10px;
     word-break: break-word;
     box-sizing: border-box;
-    
+    p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }    
+    button {
+        padding: 5px 10px;
+        border-radius: 8px;
+        float: right;
+        margin-top: 10px;
+        background:hsla(22, 32%, 45%, 0.478);
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
 }
 .comments-save > div > div {    
     cursor: pointer;

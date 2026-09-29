@@ -145,7 +145,7 @@
                                 <p>Впешіть свій номер та чекайте на диво!</p>
                             </div>
                             <div>                     
-                                <input id="inp" type="tel" placeholder="+380 XX XXX XX XX">                        
+                                <input id="inp" type="number" placeholder="+380 XX XXX XX XX">                        
                                 <button class="btn-number">Відправити</button>
                                 <button id="btnclose">✖</button>                               
                             </div>                            
@@ -224,24 +224,29 @@
                                 <div class="block">
                                     <input id="progress" type="range" min="0" max="100" value="0">
                                     <span id="counts">0</span>
-                                </div>
-             
+                                </div>             
                                 <button id="play">▶</button>
-                                <button id="fullscreen">⛶</button>
-           
-            
+                                <button id="fullscreen">⛶</button>  
                             </div>
                         </div>
-                        
+                        <!--Comments block-->
+                        <form id="comments-form" autocomplete="off">
+                            
                          <div class="panel-comments">
-                            <h1>Comments <span id="counter">(0)</span></h1>
-                            <textarea  id="comment-text" placeholder="Write coments..."></textarea>
-                            <button id="btn-send">Send</button>
+                             <input name="user" type="text" placeholder="Enter your name">
+                           
+                            
+                            <textarea name="commentText" placeholder="Write coments..."></textarea>
+                            <button id="btnSend" type="submit">Send</button>
                         </div>
-                         <div class="comments-save"></div>
-      
-        
+                         <p>Comments(<span id="counter">0</span>)</p> 
+                       
+                         <div class="comments-save">
+                             
+                         </div>  
+                             
                         </div>
+                        </form>
                 </section>
             </main>
     </div>
