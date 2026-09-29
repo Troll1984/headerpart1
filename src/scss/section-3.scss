@@ -63,8 +63,8 @@ video {
     min-height: 50px;
     border-radius: 7px;
     padding: 10px;
-    @media(max-width: 400px){
-        min-width: 50%;
+    @media(max-width: 768px){
+        min-width: 70%;
     }
 }
 textarea {   
