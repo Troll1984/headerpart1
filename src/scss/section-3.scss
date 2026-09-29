@@ -53,13 +53,19 @@ video {
     gap: 10px;
 }
 .panel-comments {
+    box-sizing: border-box;
     input {
+    box-sizing: border-box;
     width: auto;
     max-width: 30%;
+    min-width: 30%;
     height: auto;
     min-height: 50px;
     border-radius: 7px;
     padding: 10px;
+    @media(max-width: 400px){
+        min-width: 50%;
+    }
 }
 textarea {   
     max-width: 100%;
