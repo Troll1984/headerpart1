@@ -6,7 +6,7 @@
 
 .blocks {   
     z-index: 1;    
-    display: flex;        
+    display: flex;           
     color: #fff;
     overflow-wrap: break-word;  
     padding: 0 10px;  
@@ -19,6 +19,7 @@
         width: 100%;
     }
     .block-grey {   
+        width: 100%;
         z-index: 2000;      
         display: flex;                        
         font-size: 0.8rem;  
@@ -43,11 +44,12 @@
     }
 }
 .block-icons {
-    @include display;     
-    gap: 10px;   
+    @include display;   
+    gap: 20px;  
+    
     >div:first-of-type {
         @include display;
-        gap: 5px;
+        gap: 10px;
         >span {          
             padding: 15px 5px;
             background: #fff;
@@ -58,16 +60,15 @@
         }
     }
     >div:nth-child(2) {
-        display: flex;
-        flex-direction: column;
+        display: flex;        
         font-size: 0.8rem;
         font-weight: 600;        
     }
     >div:last-of-type {
          @include display;
-         gap: 5px;
+         gap: 10px;
          >i:first-of-type {
-             @include display;
+             @include display;            
             padding: 10px 25px;
             border-radius: 5px;
             background: #fff;
@@ -75,7 +76,13 @@
          }
          .raiting {
             display: flex;
-            flex-direction: column;  
+            flex-direction: column;
+            gap: 7px;
+            justify-content: center;
+            >span:last-of-type {
+                display: flex;
+            }
+             
             i {
                font-size: 0.5rem;
                color: #f5f825
@@ -104,7 +111,7 @@
             width: 180px;
             height: 70px;
             padding: 10px;
-            background: linear-gradient(46deg,rgba(65, 87, 69, 1) 0%, rgba(9, 28, 4, 1) 84%);
+            background:hsla(131, 87%, 6%, 0.814);
             font-size: 1rem;            
             @media(max-width: 1100px){
                 padding: 10px 5px;

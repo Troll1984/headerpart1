@@ -3,8 +3,8 @@
 
 let blockContact = document.querySelector('.block-contact');
 let btnClose = document.querySelector('#btnclose'); 
-let arrow1 = document.querySelector('.arrow-1');
-let arrow2 = document.querySelector('.arrow-2');
+let arrow1 = document.querySelector('#arrow-1');
+let arrow2 = document.querySelector('#arrow-2');
 let listOpen = document.querySelector('.list-open');
 let listOpen2 = document.querySelector('.list-open-2');
 

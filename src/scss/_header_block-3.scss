@@ -22,9 +22,11 @@
        #btnclose {
     display: none;
     position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 10px 15px;
+    top: -15px;
+    right: -20px;
+    color:  #073a0a;
+    background: none;
+    font-size: 20px;
 } 
     @media(max-width: 1650px) {
     width: calc(75% - 40px);
@@ -76,7 +78,7 @@
         padding: 15px 30px;
         border-radius: 10px;
         border: none;
-        background: linear-gradient(178deg,rgba(63, 99, 48, 1) 0%, rgba(4, 10, 1, 1) 84%);
+        background:  hsla(131, 87%, 6%, 0.814);
         color: #fff;
     }
     input {
