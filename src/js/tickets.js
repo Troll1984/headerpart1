@@ -7,6 +7,7 @@ let winSound = document.querySelector('#win-sound');
 let winSound1 = document.querySelector('#win-sound-1');
 let blockContact = document.querySelector('.block-contact');
 let music = document.querySelector('.music');
+let day = document.querySelector('.day');
 
 music.addEventListener('click', function() {
     if (winSound1.paused) {
@@ -34,6 +35,7 @@ btnNumber.addEventListener('click', function() {
     }
     if(inp.value === '0956479817' || inp.value === '+380956479817'){        
         overlay.classList.add('show');
+        blockContact.style.display = 'none';
         winSound.play();
          setTimeout(() => {
             modalWindow.style.display = 'block';
@@ -66,4 +68,8 @@ modalWindow.addEventListener('click', function() {
     blockContact.style.display = 'none';
     winSound.pause();
     winSound.currentTime = 0;
+     day.style.display = 'block'
+});
+day.addEventListener('click', function() {    
+     day.style.display = 'none'
 });

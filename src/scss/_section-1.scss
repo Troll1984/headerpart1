@@ -57,6 +57,7 @@ main {
 }               
 #left-arrow {
         @include arows ;
+        
             background: hsl(0, 50%, 98%);
             color: #000;                    
             &:hover {
@@ -67,6 +68,7 @@ main {
             @include arows ;
             background: #000;
             color: #fff;
+            z-index: 1;
         }    
         .slider-image {
             box-sizing: border-box;

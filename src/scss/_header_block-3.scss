@@ -14,16 +14,17 @@
     padding: 15px;    
     overflow-wrap: break-word;      
     position: fixed;     
-    z-index: 1000;  
+    z-index: 4000;  
     bottom: 500px; 
+    
     width: calc(60% - 40px); 
     margin-right: 20px ;  
     box-shadow: 3px 0px 6px 0px rgba(0,0,0,0.75);   
        #btnclose {
     display: none;
     position: absolute;
-    top: -15px;
-    right: -20px;
+    top: -17px;
+    right: -25px;
     color:  #073a0a;
     background: none;
     font-size: 20px;
@@ -46,27 +47,30 @@
         gap: 10px;
         @media(max-width:750px) {
             flex-direction: column;
-            align-items: center;
+            align-items: center;            
             gap: 5px;            
         }        
     }
 }
-
 .block-contact {
-    h1 {
-        font-size: 5rem;       
+    h3 {               
+       
+        font-size: 1.7rem;       
         @media(max-width: 990px) {
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;        
         }
         @media(max-width: 690px) {
-            font-size: 2rem;            
+            font-size: 1.5rem;            
         }
         }
-        p {
-            font-size: 1rem;
+        p {            
+            font-size: 1.3rem;
             margin-top: 5px;
+            @media(max-width: 990px) {           
+            text-align: center;        
         }
+    }
 }
 .block-contact {
     &:hover {

@@ -16,12 +16,14 @@
 }
 
 @mixin arows {
+   z-index: 1000;
    width: 70px;
    height: 70px;
    display: flex;
    justify-content: center;
    align-items: center;
    cursor: pointer 
+   
 }
 @mixin btn {
    width: 40px;
