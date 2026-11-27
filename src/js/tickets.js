@@ -20,21 +20,14 @@ music.addEventListener('click', function() {
 });
 
 
+let musicStarted = false;
 
-
-document.body.addEventListener('touchstart', function startMusic() {
-    winSound1.play()
-        .then(() => {
-            console.log('Music started');
-        })
-        .catch(error => {
-            console.log('Music error:', error);
-        });
-
-}, { once: true });
-
-
-
+window.addEventListener('click', function() {
+    if (!musicStarted) {
+        winSound1.play();
+        musicStarted = true;
+    }
+});
 btnNumber.addEventListener('click', function() {
     winSound1.pause();
 winSound1.currentTime = 0;
