@@ -11,14 +11,24 @@ let day = document.querySelector('.day');
 let win = document.querySelector('.win');
 
 music.addEventListener('click', function() {
-    if (winSound1.paused) {
+      if (winSound1.paused) {
         winSound1.play();
     } else {
         winSound1.pause();
     }
-});
 
+});
+let musicStarted = false;
+
+window.addEventListener('click', function() {
+    if (!musicStarted) {
+        winSound1.play();
+        musicStarted = true;
+    }
+});
 btnNumber.addEventListener('click', function() {
+    winSound1.pause();
+winSound1.currentTime = 0;
      if (
         !/^\d+$/.test(inp.value) && 
         !/^\+\d+$/.test(inp.value)
