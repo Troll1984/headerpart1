@@ -82,6 +82,9 @@ modalWindow.addEventListener('click', function() {
     winSound.currentTime = 0;
      day.style.display = 'block'
      win.style.display = 'flex'
+     setTimeout(() => {
+    day.style.display = 'none';
+}, 60000);
 });
 day.addEventListener('click', function() {    
      day.style.display = 'none'
