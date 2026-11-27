@@ -18,9 +18,11 @@ music.addEventListener('click', function() {
     }
 
 });
+
+
 let musicStarted = false;
 
-window.addEventListener('touchstart', function() {
+window.addEventListener('pointerdown', function() {
     if (!musicStarted) {
         winSound1.play();
         musicStarted = true;
