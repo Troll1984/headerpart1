@@ -5,18 +5,17 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    background: #fff;
+    background: $main-color;
     color: #141313;    
     height: 150px;
     min-width: 0;
-    margin: 0 auto;
+    margin: -40px auto;
     border-radius: 10px;
     padding: 15px;    
     overflow-wrap: break-word;      
     position: fixed;     
     z-index: 4000;  
-    bottom: 500px; 
-    
+    bottom: 500px;     
     width: calc(60% - 40px); 
     margin-right: 20px ;  
     box-shadow: 3px 0px 6px 0px rgba(0,0,0,0.75);   
@@ -39,8 +38,9 @@
         height: auto;
         margin-left: 20px;
     }     
-    @media(max-width: 990px) {
+    @media(max-width: 600px) {
         display: none;
+        margin-top: 50px;
     }
     >div:last-of-type {
         display: flex;

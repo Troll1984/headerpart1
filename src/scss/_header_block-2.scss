@@ -7,7 +7,7 @@
 .blocks {   
     z-index: 1;    
     display: flex;           
-    color: #fff;
+    color: $main-color;
     overflow-wrap: break-word;  
     padding: 0 10px;  
     @media(max-width: 1850px) {
@@ -52,7 +52,7 @@
         gap: 10px;
         >span {          
             padding: 15px 5px;
-            background: #fff;
+            background: $main-color;
             font-size: 0.7rem;
             font-weight: 800;
             color: #252424;
@@ -71,7 +71,7 @@
              @include display;            
             padding: 10px 25px;
             border-radius: 5px;
-            background: #fff;
+            background: $main-color;
             color: #252424;            
          }
          .raiting {
@@ -119,7 +119,7 @@
             i {
                 @include display;
                 padding: 10px 20px;
-                border: 1px dashed #fff;
+                border: 1px dashed $main-color;
                 border-radius: 10px; 
                 margin-right: 10px;               
             }

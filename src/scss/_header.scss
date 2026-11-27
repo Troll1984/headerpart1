@@ -27,10 +27,11 @@ header {
     flex-direction: column;  
     font-weight: 600;
     margin-top: 10px;  
-    color: #ffffff;
-    cursor: pointer;   
+    color: $main-color;
+    cursor: pointer;  
+    transition: all 500ms ease; 
     &:hover {
-        color: #e2e2df;
+        color: $hover-text;
     }             
     >div:first-of-type {
         display: flex;
@@ -64,7 +65,7 @@ header {
                 display: inline-block;
                 width: 10px;
                 height: 1px;
-                background: #fff;
+                background: $main-color;
                 margin-bottom: 3px;
                 margin-right: 2px;
                 }
@@ -73,7 +74,7 @@ header {
                 display: inline-block;
                 width: 10px;
                 height: 1px;
-                background: #fff;
+                background: $main-color;
                 margin-bottom: 3px;
                 margin-left: 2px;                        
                 }
@@ -87,8 +88,13 @@ header {
     gap: 5px;
     font-size: 25px;
     font-weight: 900;
-    color: #fff;
-    cursor: pointer;        
+    color: $main-color;
+    cursor: pointer;    
+     transition: all 500ms ease; 
+    &:hover {
+        color: $hover-text;
+    }
+    
     @media(max-width: 600px) {
         font-size: 18px;
     }             
@@ -96,14 +102,15 @@ header {
     display: flex;
     justify-content: center;
     font-size: 18px;
-    background: #fff;
+    background: $main-color;
     color: black;
     width: 30px;
     height: 30px;
     line-height: 30px;
     border-radius: 50%;  
+    transition: all 500ms ease;
     &:hover {
-        background: #e2e2df;
+        background: $hover-text;
     }      
     @media(max-width: 600px) {
         font-size: 12px;
@@ -111,9 +118,10 @@ header {
     }            
     >i:last-of-type {
     font-size: 35px;
-    color: #fff; 
+    color: $main-color; 
+    transition: all 500ms ease;
     &:hover {
-        color: #e2e2df;
+        color: $hover-text;
     }        
     @media(max-width: 600px) {
         font-size: 20px;
@@ -122,8 +130,13 @@ header {
 }    
 
 .weather {
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    color: #fff;  
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    color: $main-color;  
+    transition: all 500ms ease;
+    cursor: pointer;
+    &:hover {
+        color: $hover-text;
+    }
 }
