@@ -77,16 +77,16 @@ winSound1.currentTime = 0;
         
 modalWindow.addEventListener('click', function() {
     overlay.classList.remove('show');
-    modalWindow.style.display = 'none';
+    modalWindow.style.display = 'none';    
     textPresent.style.display = 'none';
     blockContact.style.display = 'none';
     winSound.pause();
     winSound.currentTime = 0;
      day.style.display = 'block'
-     win.style.display = 'flex'
+     win.style.display = 'flex'     
      setTimeout(() => {
-    day.style.display = 'none';
-}, 60000);
+    day.style.display = 'none';   
+}, 30000);
 });
 day.addEventListener('click', function() {    
      day.style.display = 'none'
