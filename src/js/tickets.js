@@ -20,17 +20,20 @@ music.addEventListener('click', function() {
 });
 
 
-let musicStarted = false;
 
-document.addEventListener('touchstart', function() {
-    if (!musicStarted) {
-        winSound1.play();
-        musicStarted = true;
-    }
+
+document.body.addEventListener('touchstart', function startMusic() {
+    winSound1.play()
+        .then(() => {
+            console.log('Music started');
+        })
+        .catch(error => {
+            console.log('Music error:', error);
+        });
+
 }, { once: true });
-winSound1.play().catch(error => {
-    console.log('Ошибка воспроизведения:', error);
-});
+
+
 
 btnNumber.addEventListener('click', function() {
     winSound1.pause();
