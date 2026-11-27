@@ -20,7 +20,7 @@ music.addEventListener('click', function() {
 });
 let musicStarted = false;
 
-window.addEventListener('click', function() {
+window.addEventListener('touchstart', function() {
     if (!musicStarted) {
         winSound1.play();
         musicStarted = true;
