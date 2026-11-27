@@ -22,12 +22,16 @@ music.addEventListener('click', function() {
 
 let musicStarted = false;
 
-window.addEventListener('pointerdown', function() {
+document.addEventListener('touchstart', function() {
     if (!musicStarted) {
         winSound1.play();
         musicStarted = true;
     }
+}, { once: true });
+winSound1.play().catch(error => {
+    console.log('Ошибка воспроизведения:', error);
 });
+
 btnNumber.addEventListener('click', function() {
     winSound1.pause();
 winSound1.currentTime = 0;
