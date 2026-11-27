@@ -12,7 +12,7 @@ document.addEventListener('click', function() {
     setTimeout(() => {
         blockContact.style.display = 'flex';
         btnClose.style.display = 'block';
-    }, 5000);   
+    }, 20000);   
 }, { once: true });
 
 btnClose.addEventListener('click', function() {
